@@ -11,6 +11,6 @@
 
     </head>
     <body class="antialiased">
-        <h1>Test2</h1><p>anopther teefwst</p>
+        <h1>Test2</h1>
     </body>
 </html>
