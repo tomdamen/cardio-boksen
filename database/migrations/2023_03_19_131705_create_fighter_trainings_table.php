@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('fighter_trainings', function (Blueprint $table) {
             $table->id();
-            $table->integer('fighter_id');
-            $table->integer('training_id');
+            $table->foreignId('fighter_id');
+            $table->foreignId('training_id');
             $table->timestamps();
         });
     }
