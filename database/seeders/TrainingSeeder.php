@@ -13,6 +13,6 @@ class TrainingSeeder extends Seeder
      */
     public function run(): void
     {
-        Training::factory(20)->create();
+        Training::factory(5)->create();
     }
 }
