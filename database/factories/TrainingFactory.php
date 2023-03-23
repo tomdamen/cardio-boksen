@@ -17,7 +17,10 @@ class TrainingFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'start_time' => fake()->dateTime(),
+            'end_time' => fake()->dateTime(),
+            'type' => fake()->randomDigit(),
+
         ];
     }
 }
