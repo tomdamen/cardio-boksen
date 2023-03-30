@@ -16,3 +16,10 @@ use App\Http\Controllers\FighterController;
 
 Route::get('/', [FighterController::class, 'viewAllFighters'])->name('homepage');
 
+
+
+
+//Test route 
+
+Route::get('/test', [FighterController::class, 'testFunction'])->name('test');
+

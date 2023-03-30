@@ -13,12 +13,7 @@
 </head>
 
 <body class="antialiased">
-
-
-
-    @foreach ($fighters as $fighter)
-        <p>{{ $fighter->firstname }}</p>
-    @endforeach
+    {{ dd($training) }}
 
     <h1>Test2</h1>
 </body>

@@ -6,6 +6,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Database\Seeders\FighterSeeder;
 use Database\Seeders\TrainingSeeder;
+use Database\Seeders\TrainingTypeSeeder;
 use Database\Seeders\FighterTrainingSeeder;
 
 class DatabaseSeeder extends Seeder
@@ -18,6 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call(FighterSeeder::class);
         $this->call(TrainingSeeder::class);
         $this->call(FighterTrainingSeeder::class);
+        $this->call(TrainingTypeSeeder::class);
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
