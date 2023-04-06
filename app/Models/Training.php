@@ -15,7 +15,7 @@ class Training extends Model
     //Relations
 
     public function trainingType() {
-        return $this->belongsTo(TrainingType::class)->using(FighterTraining::class);
+        return $this->belongsTo(TrainingType::class);
     }
 
     public function fighters() {

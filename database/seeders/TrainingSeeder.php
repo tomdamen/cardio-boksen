@@ -24,8 +24,12 @@ class TrainingSeeder extends Seeder
                 'end_time' => fake()->time(),
                 'training_type_id' => fake()->randomDigitNotZero(),]);
 
-            
-                $training->fighters()->sync(array_rand($allFighterIds, rand(1,8)));
+                $randomKeys = array_rand($allFighterIds, rand(2,15));
+                $newEntry = [];
+                foreach ($randomKeys as $key) {
+                    array_push($newEntry,$allFighterIds[$key]);
+                }                
+                $training->fighters()->sync($newEntry);
             
         }
     }
