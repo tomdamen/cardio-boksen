@@ -15,12 +15,10 @@
 <body class="antialiased">
 
 
-
     @foreach ($fighters as $fighter)
-        <p>{{ $fighter->firstname }}</p>
+        <p>{{ $fighter->first_name }}</p>
     @endforeach
 
-    <h1>Test2</h1>
 </body>
 
 </html>

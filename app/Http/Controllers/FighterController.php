@@ -18,6 +18,13 @@ class FighterController extends Controller
         return view('homepage', ['fighters' => $fighters]);
     }
 
+    public function viewWelcome() {
+
+        $fighters = Fighter::getFighters(); 
+
+        return view('welcome', ['fighters' => $fighters]);
+    }
+
 
     public function testFunction() {
         $training = Training::getTrainingById(1);
